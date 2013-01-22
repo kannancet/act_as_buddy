@@ -10,6 +10,7 @@ group :development, :production, :test do
   gem "rcov", '0.9.11'
   gem "rake"
   gem "activerecord", ">= 3.1.0"
-  gem "mysql2"
-  gem "rspec", "~> 2.12.0"
+  gem 'rails'
+  gem 'dummier', '>= 0.3.2'
+  gem 'sqlite3'
 end

@@ -33,8 +33,8 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new('spec')
+# require 'rspec/core/rake_task'
+# RSpec::Core::RakeTask.new('spec')
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
