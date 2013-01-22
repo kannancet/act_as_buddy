@@ -68,6 +68,14 @@ To add multiple buddies to the buddy list (or 'Bulk Buddying') of an object.
   # args is an array of all buddies to be added. They should all the of same type as parent object.
 
 
+=== Testing the Gem
+* Fork the project.
+* Goto the root folder.
+* Execute 'bundle install'.
+* Execute 'bundle exec dummier'.
+* This will create the test app and all dependencies for testing.
+* Execute 'rake test' or simply 'rake'.
+
 == Comments/Requests
 
 If anyone has comments or questions please let me know (krxcet@gmail.com or kannanr@qburst.com).
