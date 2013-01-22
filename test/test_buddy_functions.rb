@@ -88,7 +88,7 @@ require File.dirname(__FILE__) + '/test_helper'
       context "Testing find_buddies_with and find_buddies_like- " do
         
         should "return buddy name " do
-          assert "sunil", @kannan.find_buddies_with(:name => 'sunil').first.name
+          assert "sunil", @kannan.find_buddies_with(:name => 'sunil').name
           assert "sunil", @kannan.find_buddies_like(:name => 'sun').first.name
         end
         
