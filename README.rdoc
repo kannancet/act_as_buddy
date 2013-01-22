@@ -1,4 +1,4 @@
-= acts_as_buddy
+= act_as_buddy
 
 act_as_buddy is a gem to allow any model to implement self relation. For eg: the friendships of a user can be implemented easily by self relation technique of act_as_buddy.
 Any Model can be buddied or lopped on to itself. Main uses would be for Users create friends etc..
@@ -78,7 +78,7 @@ If you have updates or patches or want to contribute I would love to see what yo
 
 * Fork the project.
 * Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a future version unintentionally (acts_as_buddy uses Shoulda and Dummier)
+* Add tests for it. This is important so I don't break it in a future version unintentionally (act_as_buddy uses Shoulda and Dummier)
 * Send me a pull request. Bonus points for topic branches.
 
 
