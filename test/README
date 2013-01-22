@@ -1,0 +1,12 @@
+Testing
+=======
+
+Tests are written with Shoulda on top of Test::Unit and dummier for dummy app creation.  Tests are run using 'rake' or 'rake test' command.
+
+1. Clone your fork git locally.
+2. Install the dependencies
+    $ bundle install
+3. Create test app inside test/dummy of gem root.
+    $ bundle exec dummier 
+3. Run the tests:
+    rake test
