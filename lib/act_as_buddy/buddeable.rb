@@ -12,7 +12,7 @@ module ActAsBuddy
   Class methods that add the relations to the class on which ac_as_buddy is called.
 =end
     module ClassMethods
-      def acts_as_buddeable
+      def act_as_buddeable
         has_many :buddy_mappers, :foreign_key => "buddeable_parent_id", :as => :buddeable
         include ActAsBuddy::Buddeable::InstanceMethods
         include ActAsBuddy::Util
@@ -39,7 +39,7 @@ module ActAsBuddy
         def remove_buddy(*args)
           couple_buddies, child_buddy = check_argument_pattern(*args)
           couple_buddies.map(&:destroy)
-          p "#{self.class.to_s}s with id:#{self.id} and #{child_buddy.id} are now buddies."
+          p "#{self.class.to_s}s with id:#{self.id} and #{child_buddy.id} are now un-buddied."
         end
         
 =begin
@@ -47,6 +47,13 @@ module ActAsBuddy
 =end
         def fetch_all_buddies
           self.class.joins(:buddy_mappers).where("buddy_mappers.buddeable_child_id=?", self.id)
+        end
+        
+=begin
+  This function is used to get the count of all buddies.
+=end
+        def get_buddy_count
+          self.class.joins(:buddy_mappers).where("buddy_mappers.buddeable_child_id=?", self.id).size
         end
 
 =begin        
@@ -103,7 +110,7 @@ module ActAsBuddy
         def find_buddies_with(params = {})
           (raise "Argument cannot be blank." and return) if params.empty?
           (raise "Argument needs to be a hash." and return) unless params.is_a?(Hash)
-          self.class.joins(:buddy_mappers).where("buddy_mappers.buddeable_child_id=? AND #{self.class.table_name}.#{params.keys.first.to_s}=?", self.id, params.values.first.to_s)
+          self.class.joins(:buddy_mappers).where("buddy_mappers.buddeable_child_id=? AND #{self.class.table_name}.#{params.keys.first.to_s}=?", self.id, params.values.first.to_s).first
         end
         
 =begin
