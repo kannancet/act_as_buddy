@@ -22,7 +22,7 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "act_as_buddy"
   gem.homepage = "http://github.com/kannancet/act_as_buddy"
-  gem.license = "MIT"
+  gem.license = "BSD"
   gem.summary = "A gem to implement self relation on any table."
   gem.description = "This gem is used to implement self relation in a rails project for any table. The gem will automatically manage self relation implementation on mumtiple tables."
   gem.email = "krxcet@gmail.com"
