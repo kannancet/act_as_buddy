@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["kannancet"]
-  s.date = "2013-01-22"
+  s.date = "2013-01-23"
   s.description = "This gem is used to implement self relation in a rails project for any table. The gem will automatically manage self relation implementation on mumtiple tables."
   s.email = "krxcet@gmail.com"
   s.extra_rdoc_files = [
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     "lib/generators/templates/model.rb"
   ]
   s.homepage = "http://github.com/kannancet/act_as_buddy"
-  s.licenses = ["BSD"]
+  s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
   s.summary = "A gem to implement self relation on any table."
