@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     "lib/generators/templates/model.rb"
   ]
   s.homepage = "http://github.com/kannancet/act_as_buddy"
-  s.licenses = ["MIT"]
+  s.licenses = ["BSD"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
   s.summary = "A gem to implement self relation on any table."
