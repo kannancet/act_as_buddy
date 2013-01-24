@@ -16,7 +16,10 @@ Add the gem to the gemfile:
 Run the generator:
   rails generate act_as_buddy
 
-This will generate a migration file as well as a model called BuddyMapper.
+This will generate a migration file as well as a model called BuddyMapper.Then do:
+	rake db:migrate
+	
+This will migrate the buddy_mappers table to database.
 
 === Rails <=3.0.0 is NOT SUPPORTED
 
