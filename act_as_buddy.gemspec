@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["kannancet"]
   s.date = "2013-02-25"
-  s.description = "This gem is used to implement self relation in a rails project for any table. The gem will automatically manage self relation implementation on mumtiple tables."
+  s.description = "Act-as-Buddy is a gem to allow any model to implement self relation. For eg: the friendships of a user can be implemented easily by self relation technique of act_as_buddy. Any Model can be buddied or lopped on to itself. Main uses would be for Users create friends etc.. Eg: User has many friends and friends are members of users table itself. This is expected to be heavily useful in social networking domain."
   s.email = "krxcet@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",

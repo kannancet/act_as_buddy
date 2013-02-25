@@ -24,7 +24,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/kannancet/act_as_buddy"
   gem.license = "BSD"
   gem.summary = "A gem to implement self relation on any table."
-  gem.description = "This gem is used to implement self relation in a rails project for any table. The gem will automatically manage self relation implementation on mumtiple tables."
+  gem.description = "Act-as-Buddy is a gem to allow any model to implement self relation. For eg: the friendships of a user can be implemented easily by self relation technique of act_as_buddy. Any Model can be buddied or lopped on to itself. Main uses would be for Users create friends etc.. Eg: User has many friends and friends are members of users table itself. This is expected to be heavily useful in social networking domain."
   gem.email = "krxcet@gmail.com"
   gem.authors = ["kannancet"]
   gem.files = Dir.glob("{bin,lib}/**/*")
