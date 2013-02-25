@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["kannancet"]
   s.date = "2013-02-25"
-  s.description = "This gem is used to implement self relation in a rails project for any table. The gem will automatically manage self relation implementation on mumtiple tables."
+  s.description = "This gem is used to implement self relation in a rails project for any table. The gem will automatically manage self relation implementation on multiple tables."
   s.email = "krxcet@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
