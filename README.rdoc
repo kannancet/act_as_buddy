@@ -104,7 +104,9 @@ If you have updates or patches or want to contribute I would love to see what yo
 
 This list is open to all. You are all welcome :).
 
-* kannacet (Kannan Reghu a.k.a 'Shrank') - https://github.com/kannancet
+* kannacet (Kannan Reghu a.k.a 'Shrank') - 
+  * Website: http://www.snippet-monkey.com
+  * Github: https://github.com/kannancet
 
 
 Copyright (c) 2013 kannancet(krxcet@gmail.com, kannanr@qburst.com). See LICENSE.txt for
